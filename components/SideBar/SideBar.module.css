@@ -1,0 +1,31 @@
+.sidebar {
+  @apply fixed top-[calc((100vh-10rem)/2)] flex flex-col;
+}
+
+.sidebar__item {
+  @apply mb-4 cursor-pointer flex items-center justify-center w-20 md:w-12 md:ml-1 h-12 text-white text-center;
+}
+
+.sidebar__item::after {
+  @apply absolute;
+}
+
+.sidebar__item:hover img {
+  @apply opacity-0 transition-all duration-300 ease-out md:opacity-100;
+}
+
+.sidebar__item:nth-child(1):hover {
+  @apply after:content-["Github"] after:md:content-none scale-110 transition-all;
+}
+
+.sidebar__item:nth-child(2):hover {
+  @apply after:content-["Linkedin"] after:md:content-none scale-110 transition-all;
+}
+
+.sidebar__item:nth-child(3):hover {
+  @apply after:content-["Twitter"] after:md:content-none scale-110 transition-all;
+}
+
+.sidebar__item:nth-child(4):hover {
+  @apply after:content-["Instagram"] after:md:content-none scale-110 transition-all;
+}

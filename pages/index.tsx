@@ -7,12 +7,13 @@ import Layout from '../components/Layout'
 import Main from '../components/Main'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import SideBar from '../components/SideBar'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Cursor />
-      {/* SideBar Component */}
+      <SideBar />
       <Navbar />
       <Main />
       <About />
