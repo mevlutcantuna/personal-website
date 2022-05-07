@@ -1,0 +1,3 @@
+.drawer__menu {
+  @apply w-[375px] h-screen;
+}
