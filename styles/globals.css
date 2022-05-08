@@ -5,6 +5,6 @@
 
 @layer base {
   * {
-    @apply font-raleway m-0 p-0 box-border list-none scroll-smooth;
+    @apply font-raleway m-0 p-0 box-border list-none scroll-smooth cursor-none
   }
 }

@@ -1,9 +1,7 @@
 .cursor {
-  pointer-events: none;
-  position: fixed;
-  padding: 0.3rem;
-  background-color: white;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  transition: transform 0.3s ease;
+  @apply fixed p-[5px] bg-white rounded-full mix-blend-difference z-50;
+}
+
+.cursor__followed {
+  @apply fixed p-6 bg-transparent border-[1px] border-solid rounded-full border-white z-50;
 }
