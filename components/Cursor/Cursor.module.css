@@ -1,7 +1,17 @@
 .cursor {
-  @apply fixed p-[5px] bg-white rounded-full mix-blend-difference z-50;
+  @apply fixed p-[5px] bg-white rounded-full pointer-events-none overflow-hidden
+}
+
+.cursor {
+  z-index: 1000;
+  transform: translate(-50%, -50%);
 }
 
 .cursor__followed {
-  @apply fixed p-6 bg-transparent border-[1px] border-solid rounded-full border-white z-50;
+  @apply fixed p-6 bg-transparent border-[1px] border-solid rounded-full border-white pointer-events-none;
+}
+
+.cursor__followed {
+  z-index: 1000;
+  transform: translate(-50%, -50%);
 }

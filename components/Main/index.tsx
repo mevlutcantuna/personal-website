@@ -6,7 +6,7 @@ import ScrollDown from "../../assets/scroll-down.svg"
 
 const Main: React.FC = () => {
     const position = useTypewriter({
-        words: ["Works ? Frontend Developer : Learner"],
+        words: ["Works ? Frontend Developer : Learner", "Web Developer", "Frontend Developer"],
         loop: 0,
         delaySpeed: 1000,
         typeSpeed: 130,
@@ -23,7 +23,6 @@ const Main: React.FC = () => {
     const clickScrollDown = () => {
         window.scrollTo(0, window.innerHeight)
     }
-
 
     const variants = {
         visible: {

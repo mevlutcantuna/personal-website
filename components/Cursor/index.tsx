@@ -7,14 +7,13 @@ const Cursor: React.FC = () => {
 
     useEffect(() => {
         cursorRef.current.style.display = cursorFollowedRef.current.style.display = 'none'
-        
+
         document.addEventListener('mousemove', (e) => {
-            cursorRef.current.style.display = 'flex'
+            cursorRef.current.style.display = cursorFollowedRef.current.style.display = 'flex'
             let { clientX, clientY } = e
-            const mouseX = clientX - cursorRef.current.clientWidth / 2;
-            const mouseY = clientY - cursorRef.current.clientHeight / 2;
-            cursorRef.current.style.transform = `translate3d(${mouseX}px,${mouseY}px,0)`
-            cursorFollowedRef.current.style.transform = `translate3d(${mouseX}px,${mouseY}px,0)`
+
+            cursorRef.current.style.cssText = `left:${clientX}px;top:${clientY}px;`
+            cursorFollowedRef.current.style.cssText = `left:${clientX}px;top:${clientY}px;`
         })
 
         document.addEventListener("mouseleave", (e) => {
@@ -23,10 +22,12 @@ const Cursor: React.FC = () => {
 
     }, [])
 
-    return <>
-        <div className={styles.cursor} ref={cursorRef}></div>
-        <div className={styles.cursor__followed} ref={cursorFollowedRef}></div>
-    </>
+    return (
+        <div>
+            <div className={styles.cursor} ref={cursorRef}></div>
+            <div className={styles.cursor__followed} ref={cursorFollowedRef}></div>
+        </div>
+    )
 }
 
 export default Cursor; 

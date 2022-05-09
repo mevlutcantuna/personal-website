@@ -1,17 +1,17 @@
 .main {
-  @apply w-full h-screen bg-black text-white flex items-center justify-between pl-[10%] md:px-16
+  @apply w-full h-screen bg-black text-white flex items-center justify-between pl-[10%] md:px-16 transition-all duration-500
 }
 
 .main__texts {
-  @apply pb-32;
+  @apply pb-32 uppercase
 }
 
 .main__texts__title {
-  @apply text-6xl;
+  @apply text-6xl md:text-5xl;
 }
 
 .main__texts_position {
-  @apply text-2xl mt-4 h-6;
+  @apply text-2xl mt-4 h-6 md:text-xl
 }
 
 .main__scroll__down {

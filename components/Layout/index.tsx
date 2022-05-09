@@ -1,5 +1,8 @@
+import Cursor from "../Cursor"
+
 const Layout: React.FC<any> = ({ children }) => {
     return <>
+        <Cursor />
         {children}
     </>
 }
