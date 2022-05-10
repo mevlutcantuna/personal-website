@@ -25,6 +25,9 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", changeBackgroundColor)
+        if (window.scrollY > 64) {
+            setBgChange(true)
+        } else setBgChange(false)
     })
 
     return (

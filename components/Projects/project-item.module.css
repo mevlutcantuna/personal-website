@@ -1,5 +1,9 @@
 .project__item {
-  @apply w-80 h-52 overflow-hidden m-2 relative rounded-lg;
+  @apply w-80 h-52 overflow-hidden m-2 relative rounded-lg xl:w-full xl:max-w-[380px]
+}
+
+.project__item__image { 
+  @apply w-80;
 }
 
 .project__item span img {
@@ -7,8 +11,8 @@
 }
 
 .project__item__details {
-  @apply w-full h-full opacity-0 top-52 left-0 p-4 absolute bg-gray-200 bg-opacity-90 backdrop-blur-md flex flex-col items-center rounded-lg
-  transition-all duration-500;
+  @apply w-full opacity-0 top-52 left-0 p-4 absolute bg-gray-200 bg-opacity-90 backdrop-blur-md flex flex-col items-center rounded-lg
+  transition-all duration-500 h-fit
 }
 
 .project__item h1 {
@@ -16,7 +20,7 @@
 }
 
 .project__item p {
-  @apply text-gray-500;
+  @apply text-gray-500 text-base tracking-tighter leading-5
 }
 
 .project__item div {
@@ -24,9 +28,14 @@
 }
 
 .project__item div span {
-  @apply mr-[6px] text-gray-700;
+  @apply mr-[6px] text-gray-700 text-sm
 }
 
 .project__item:hover .project__item__details {
   @apply top-0 opacity-100;
+}
+
+
+.project__item__details__bottom a{
+  @apply mx-4 hover:scale-110
 }

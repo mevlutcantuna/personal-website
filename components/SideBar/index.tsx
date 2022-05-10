@@ -1,10 +1,10 @@
 import styles from './SideBar.module.css'
 import Image from 'next/image';
 
-import GithubIcon from "../../assets/github.svg"
-import LinkedinIcon from "../../assets/linkedin.svg"
-import TwitterIcon from "../../assets/twitter.svg"
-import InstagramIcon from "../../assets/instagram.svg"
+import GithubIcon from "../../assets/social/github-white.svg"
+import LinkedinIcon from "../../assets/social/linkedin.svg"
+import TwitterIcon from "../../assets/social/twitter.svg"
+import InstagramIcon from "../../assets/social/instagram.svg"
 
 import { motion } from 'framer-motion';
 
