@@ -1,7 +1,10 @@
 import styles from "./Footer.module.css"
 
 const Footer: React.FC = () => {
-    return <div className={styles.footer}>Footer</div>
+    return <div className={styles.footer}>
+        <span data-aos="fade-down"
+                data-aos-anchor-placement="top-bottom">created by mevlüt can tuna</span>
+    </div>
 }
 
-export default Footer;
+export default Footer; 

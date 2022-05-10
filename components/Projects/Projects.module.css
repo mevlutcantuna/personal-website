@@ -1,5 +1,5 @@
 .projects {
-  @apply flex flex-col w-full min-h-screen bg-black px-32 pt-32 xl:pr-4 xl:pl-16;
+  @apply flex flex-col w-full min-h-screen bg-black px-32 pt-32 xl:pr-4 xl:pl-20;
 }
 
 .projects__title{

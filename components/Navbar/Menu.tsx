@@ -1,6 +1,6 @@
 import styles from "./Menu.module.css"
 
-const Menu = () => {
+const Menu: React.FC = () => {
     return (
         <div className={styles.menu}>
             <div className={styles.menu__links}>
@@ -9,7 +9,7 @@ const Menu = () => {
                 <a className={`${styles.menu__links__item}`} href="#projects">Projects</a>
                 <a className={`${styles.menu__links__item}`} href="#contact">Contact</a>
             </div>
-        </div>
+        </div >
     )
 }
 
