@@ -3,12 +3,18 @@ import styles from "./Projects.module.css"
 
 const Projects: React.FC = () => {
     return <div id="projects" className={styles.projects}>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
-        <ProjectItem/>
+        <h1 className={styles.projects__title}>
+            Projects
+        </h1>
+        <div className={styles.projects__items}>
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+        </div>
+
 
     </div>
 }
