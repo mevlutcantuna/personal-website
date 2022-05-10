@@ -2,8 +2,8 @@
   @apply w-full h-full pt-36 px-20 md:px-16 min-h-screen bg-black pb-10 grid grid-cols-2 gap-8 lg:grid-cols-1 lg:gap-20 lg:pr-4
 }
 
-.about__main {
-  @apply text-white md:mb-10
+.about__main { 
+  @apply text-white flex items-start justify-center flex-col md:mb-10
 }
 
 .about__main h1 {
@@ -11,7 +11,7 @@
 }
 
 .about__main p {
-  @apply text-xl tracking-wide leading-8 mb-8;
+  @apply text-[17px] tracking-wide leading-8 mb-8 mr-10 md:mr-0;
 }
 
 .about__main a {

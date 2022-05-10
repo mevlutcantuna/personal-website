@@ -1,6 +1,6 @@
 import styles from "./About.module.css"
 import Timeline from "./Timeline";
-
+ 
 const About: React.FC = () => {
     return (
         <div id="about" className={styles.about}>

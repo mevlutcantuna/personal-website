@@ -1,65 +1,15 @@
 .timeline {
-  @apply w-full h-full min-h-[20rem] flex items-center justify-center text-white;
+  @apply w-full h-full text-white lg:px-8 sm:px-0;
 }
 
-.timeline__container {
-  @apply w-[80%];
-}
-
-.timeline__container::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  left: 50%;
-  background-color: red;
-  transform: translateX(-50%);
-}
-
-.timeline__item {
-  @apply w-full max-w-[50%] relative;
-}
-
-.timeline__item:nth-child(odd) {
-  float: left;
-  clear: right;
-  transform: translateX(-30px);
-}
-
-.timeline__item:nth-child(even) {
-  float: right;
-  clear: left;
-  transform: translateX(30px);
-}
-
-.timeline__item__box {
-  @apply bg-gray-400 p-2 mb-4;
-}
-
-.timeline__item__box:last-child {
-  @apply mb-0;
-}
-
-.timeline__item__box p {
-  @apply text-sm tracking-tight;
-}
-
-.timeline__item::after {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  border-radius: 100%;
-  background: gray;
-  top: 0;
-}
-
-.timeline__item:nth-child(odd)::after {
-  right: -30px;
-  transform: translate(50%, -50%);
-}
-
-.timeline__item:nth-child(even)::after {
-    left: -30px;
-    transform: translate(-50%, -50%);
+@media only screen and (min-width: 640px) {
+  .timeline__container::before {
+    @apply content-[''] absolute w-[2px] h-full left-1/2 bg-gray-700 translate-x-[-50%];
   }
+}
+
+@media only screen and (max-width: 638px) {
+  .timeline {
+    padding: 0 0 !important;
+  }
+}

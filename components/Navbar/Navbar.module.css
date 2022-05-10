@@ -1,5 +1,5 @@
 .navbar {
-  @apply w-full fixed flex justify-between items-center py-8 px-12 transition-all duration-500 ease-in-out md:px-2
+  @apply w-full fixed flex justify-between items-center py-8 px-12 transition-all duration-500 ease-in-out md:px-2 z-50 
 }
 
 .navbar__scrolled {
