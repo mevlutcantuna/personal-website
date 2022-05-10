@@ -1,0 +1,32 @@
+.project__item {
+  @apply w-80 h-52 overflow-hidden m-2 relative rounded-lg
+}
+
+.project__item span img {
+  @apply rounded-lg;
+}
+
+.project__item__details {
+  @apply w-full h-full opacity-0 top-52 left-0 p-4 absolute bg-gray-200 bg-opacity-90 backdrop-blur-md flex flex-col items-center rounded-lg
+  transition-all duration-500
+}
+
+.project__item h1 {
+  @apply text-gray-800 text-xl font-bold mb-2;
+}
+
+.project__item p {
+  @apply text-gray-500;
+}
+
+.project__item div {
+  @apply flex flex-wrap mt-2;
+}
+
+.project__item div span {
+  @apply mr-[6px] text-gray-700;
+}
+
+.project__item:hover .project__item__details {
+    @apply top-0 opacity-100
+}

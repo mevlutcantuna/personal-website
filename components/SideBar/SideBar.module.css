@@ -31,11 +31,11 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .sidebar__item{
-    margin-bottom: .2rem;
+  .sidebar__item {
+    margin-bottom: 0.2rem;
   }
 
-  .sidebar__item span:nth-child(1) {
+  .sidebar__item span {
     width: 40px !important;
   }
 }

@@ -3,7 +3,7 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Layout from '../components/Layout'
-import Main from '../components/Main'
+import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import SideBar from '../components/SideBar'
@@ -15,14 +15,14 @@ import { useEffect } from 'react'
 const Home: NextPage = () => {
 
   useEffect(() => {
-    AOS.init({duration:1000});
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
     <Layout>
       <SideBar />
       <Navbar />
-      <Main />
+      <Hero />
       <About />
       <Projects />
       <Contact />
