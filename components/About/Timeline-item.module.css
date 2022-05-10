@@ -48,10 +48,10 @@
   }
 
   .timeline__item:nth-child(1):after{
-      @apply bg-blue-200
+      @apply bg-blue-300
   }
 
   .timeline__item:hover::after {
-      @apply bg-blue-400 duration-500
+      @apply bg-blue-500 duration-500
   }
 }

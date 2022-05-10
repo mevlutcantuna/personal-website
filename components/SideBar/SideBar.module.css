@@ -29,3 +29,13 @@
 .sidebar__item:nth-child(4):hover {
   @apply after:content-["Instagram"] after:md:content-none scale-110 transition-all;
 }
+
+@media only screen and (max-width: 500px) {
+  .sidebar__item{
+    margin-bottom: .2rem;
+  }
+
+  .sidebar__item span:nth-child(1) {
+    width: 40px !important;
+  }
+}
