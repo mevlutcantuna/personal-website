@@ -1,6 +1,7 @@
 import styles from "./About.module.css"
 import Timeline from "./Timeline";
- 
+import { AboutText } from "../../data";
+
 const About: React.FC = () => {
     return (
         <div id="about" className={styles.about}>
@@ -9,7 +10,7 @@ const About: React.FC = () => {
                 className={styles.about__main} >
                 <h1>About Me</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et recusandae dolorem labore consequatur rerum modi omnis voluptatibus inventore saepe eligendi, voluptates voluptatum dolor officiis tempore aspernatur repellat tempora libero excepturi sequi? Dicta, quia provident a laboriosam suscipit, esse porro eum, deleniti et iste perferendis minima quas quidem! Nostrum, magnam?
+                    {AboutText.about}
                 </p>
                 <a>
                     Resume

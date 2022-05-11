@@ -28,7 +28,6 @@ const Contact: React.FC = () => {
             });
     }
 
-
     return <div id="contact" className={styles.contact}>
         <h1 className={styles.contact__title}>Contact</h1>
         <div className={styles.contant__container}>

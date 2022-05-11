@@ -15,6 +15,14 @@
   transition-all duration-500 h-fit
 }
 
+.project__item__details p {
+  @apply !mb-0
+}
+
+.project__item__details > div > span {
+  @apply sm:!text-[.7rem]
+}
+
 .project__item h1 {
   @apply text-gray-800 text-xl font-bold mb-2;
 }

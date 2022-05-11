@@ -1,5 +1,7 @@
 import ProjectItem from "./ProjectItem";
 import styles from "./Projects.module.css"
+import { GithubRepos } from "../../data";
+import { GithubReposType } from "../../types";
 
 const Projects: React.FC = () => {
     return <div id="projects" className={styles.projects}>
@@ -7,12 +9,7 @@ const Projects: React.FC = () => {
             Projects
         </h1>
         <div className={styles.projects__items}>
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
+            {GithubRepos.map((item: GithubReposType) => <ProjectItem key={item.id} item={item} />)}
         </div>
 
 

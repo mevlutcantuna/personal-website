@@ -37,6 +37,9 @@ const Navbar: React.FC = () => {
         } else setBgChange(false)
     }, [])
 
+
+    
+
     return (
         <motion.div ref={ref} animate={{ y: "0%", opacity: 1 }} initial={{ y: "-100%" }} transition={{ duration: .2 }} className={`${styles.navbar} ${bgChange && styles.navbar__scrolled}`}>
             <div className={styles.navbar__logo}>MCT</div>
@@ -50,11 +53,11 @@ const Navbar: React.FC = () => {
                     <Image onClick={() => handleDrawerChange(false)} src={CloseIcon} width={40} height={40} alt="closeicon" />
                 }
             </div>
-            <div className={styles.navbar__drawer__menu}>
+            <div className={isDrawerOpen ? styles.navbar__drawer__menu : styles.navbar__drawer__menu__hidden}>
                 <DrawerMenu isDrawerOpen={isDrawerOpen} />
             </div>
         </motion.div>
-    )
+    ) 
 }
 
 export default Navbar;

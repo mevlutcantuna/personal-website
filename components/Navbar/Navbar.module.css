@@ -18,6 +18,11 @@
   @apply relative max-w-[375px] w-full hidden md:flex md:absolute top-[6.5rem] right-0
 }
 
+.navbar__drawer__menu__hidden{
+  @apply relative max-w-[375px] hidden md:absolute top-[6.5rem] right-0
+}
+
+
 .navbar__icons{
   @apply hidden md:flex
 }

@@ -7,7 +7,7 @@
 }
 
 .about__main h1 {
-  @apply text-4xl mb-4;
+  @apply text-4xl mb-4 text-white
 }
 
 .about__main p {

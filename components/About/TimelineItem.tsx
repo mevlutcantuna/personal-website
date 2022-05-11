@@ -1,11 +1,17 @@
+import { TimelineDataType } from "../../types"
 import styles from "./Timeline-item.module.css"
 
-const TimelineItem = () => {
+type PropType = {
+    item: TimelineDataType
+}
+
+const TimelineItem: React.FC<PropType> = ({ item }) => {
     return <div className={styles.timeline__item}>
-        <span className={styles.timeline__item__date}>20th May 2022 - Current</span>
+        <span className={styles.timeline__item__date}>{item.date}</span>
         <div className={styles.timeline__item__box}>
-            <h1>Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem autem in quod ab eaque velit.</p>
+            <h1>{item.title}</h1>
+            <h2>{item.subtitle}</h2>
+            <p>{item?.note}</p>
         </div>
     </div>
 }
