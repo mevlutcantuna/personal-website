@@ -1,9 +1,7 @@
-.menu {}
-
 .menu__links {
-  @apply text-red-50 md:flex md:flex-col;
+  @apply md:flex md:flex-col
 }
 
 .menu__links__item {
-  @apply ml-8 text-xl tracking-wider md:ml-0 md:text-center md:mt-16;
+  @apply ml-8 text-xl tracking-wider md:ml-0 md:text-center md:mt-16 cursor-none !text-red-50
 }
