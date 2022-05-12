@@ -11,8 +11,6 @@ const Projects: React.FC = () => {
         <div className={styles.projects__items}>
             {GithubRepos.map((item: GithubReposType) => <ProjectItem key={item.id} item={item} />)}
         </div>
-
-
     </div>
 }
 

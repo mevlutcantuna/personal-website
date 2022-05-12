@@ -12,7 +12,12 @@ const About: React.FC = () => {
                 <p>
                     {AboutText.about}
                 </p>
-                <a>
+                <a
+                    href={"http://localhost:3000/mevlutcantuna.pdf"}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    type="pdf"
+                    >
                     Resume
                 </a>
             </div>

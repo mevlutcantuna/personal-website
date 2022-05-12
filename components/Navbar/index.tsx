@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import Menu from "./Menu";
 import styles from "./Navbar.module.css"
-import MenuIcon from "../../assets/menu.svg"
-import CloseIcon from "../../assets/close.svg"
+import MenuIcon from "../../assets/icons/menu.svg"
+import CloseIcon from "../../assets/icons/close.svg"
 
 import Image from "next/image"
 import DrawerMenu from "./DrawerMenu";

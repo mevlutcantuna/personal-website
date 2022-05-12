@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import ScrollDown from "../../assets/scroll-down.svg"
+import ScrollDown from "../../assets/icons/scroll-down.svg"
 
 import { useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";

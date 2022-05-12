@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import Head from "next/head";
 import type { NextPage } from 'next'
 import About from '../components/About'
 import Contact from '../components/Contact'
@@ -10,7 +12,6 @@ import SideBar from '../components/SideBar'
 
 import AOS from "aos"
 import "aos/dist/aos.css";
-import { useEffect } from 'react'
 
 const Home: NextPage = () => {
 
@@ -20,6 +21,9 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>Mevlüt Can Tuna</title>
+      </Head>
       <SideBar />
       <Navbar />
       <Hero />
