@@ -80,7 +80,7 @@ export const GithubRepos:GithubReposType[] = [
         text:"Users can filter products by tags, brands and sort products by old to new, new to old, price high to low...Users can add products to basket and remove products from basket.",
         github:"https://github.com/mevlutcantuna/shopping",
         demo:"https://shopping-mevlutcantuna.netlify.app/",
-        tech:["ReactJS","Styled-Components","Redux","Hooks"]
+        tech:["ReactJS","Styled-Components","Redux","Hooks","..."]
     },
     {
         id: nanoid(),
@@ -89,7 +89,7 @@ export const GithubRepos:GithubReposType[] = [
         text:"Users can select number of questions and types. When user chooses a option, showing correct and wrong choices. If user knows the correct choice, score board increases.",
         github:"https://github.com/mevlutcantuna/quizapp-typescript",
         demo:"https://quizapp-mct.netlify.app/",
-        tech:["ReactJS","Typescript","SCSS","Axios"]
+        tech:["ReactJS","Typescript","SCSS","Axios","..."]
     },
     {
         id: nanoid(),
@@ -98,6 +98,6 @@ export const GithubRepos:GithubReposType[] = [
         text:"User can search movies by type,name and year and add movies to favorites which keep in local storage and see detail of movies.",
         github:"https://github.com/mevlutcantuna/movie-app",
         demo: "",
-        tech:["ReactJS","NextJS","Redux","SCSS","MongoDB"]
+        tech:["ReactJS","Styled-Components","Redux","React-Router","ReduxThunk","Axios","..."]
     }
 ]
