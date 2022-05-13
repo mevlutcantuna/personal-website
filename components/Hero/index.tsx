@@ -4,6 +4,7 @@ import ScrollDown from "../../assets/icons/scroll-down.svg"
 
 import { useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
+import Skills from "./Skills";
 
 
 const Main: React.FC = () => {
@@ -44,6 +45,9 @@ const Main: React.FC = () => {
                 <motion.div variants={variants} transition={{ duration: .5 }} initial='hidden' animate='visible' className={styles.main__texts_position}>
                     {position.text}
                 </motion.div>
+            </div>
+            <div>
+                <Skills />
             </div>
             <motion.button onClick={clickScrollDown} animate={{ y: [0, 10, 0] }} transition={{ repeat: Infinity, duration: 1 }} className={styles.main__scroll__down}>
                 <Image src={ScrollDown} alt="scroll" width={40} height={40} />
