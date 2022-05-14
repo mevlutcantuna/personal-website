@@ -153,7 +153,7 @@ export const ProfileInfo:ProfileInfoType = {
     linkedin:'https://www.linkedin.com/in/mevlutcantuna/',
     twitter:'https://twitter.com/mevlt_tuna',
     instagram:'https://www.instagram.com/mevlutcantuna1/',
-    resume:'www.mevlutcantuna.com/mevlutcantuna.pdf',
+    resume:'https://www.mevlutcantuna.com/mevlutcantuna.pdf',
     email:'mttuna90@gmail.com',
     phone_number:'+90 553 044 78 52'
 }
