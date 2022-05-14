@@ -1,6 +1,6 @@
 import styles from "./About.module.css"
 import Timeline from "./Timeline";
-import { AboutText } from "../../data";
+import { ProfileInfo } from "../../data";
 
 const About: React.FC = () => {
     return (
@@ -10,14 +10,14 @@ const About: React.FC = () => {
                 className={styles.about__main} >
                 <h1>About Me</h1>
                 <p>
-                    {AboutText.about}
+                    {ProfileInfo.about}
                 </p>
                 <a
-                    href={"https://www.mevlutcantuna.com/mevlutcantuna.pdf"}
+                    href={ProfileInfo.resume}
                     target='_blank'
                     rel='noopener noreferrer'
                     type="pdf"
-                    >
+                >
                     Resume
                 </a>
             </div>

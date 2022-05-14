@@ -1,22 +1,24 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import ScrollDown from "../../assets/icons/scroll-down.svg"
+import { ProfileInfoType } from "../../types/"
 
 import { useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
 import Skills from "./Skills";
+import { ProfileInfo } from "../../data";
 
 
 const Main: React.FC = () => {
     const position = useTypewriter({
-        words: ["Works ? Frontend Developer : Learner", "Web Developer", "Frontend Developer"],
+        words: ProfileInfo.titles,
         loop: 0,
         delaySpeed: 1000,
         typeSpeed: 130,
     });
 
     const title = useTypewriter({
-        words: ["Mevlüt Can Tuna"],
+        words: [ProfileInfo.name],
         loop: 1,
         delaySpeed: 1000,
         typeSpeed: 130,

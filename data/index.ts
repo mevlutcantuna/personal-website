@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid'
-import { TimelineDataType,AboutType,GithubReposType,TechDataType } from '../types'
+import { TimelineDataType,GithubReposType,TechDataType,ProfileInfoType } from '../types'
 
 import BlogImage from "../assets/repos/blog-project.png"
 import CryptoExchangeImage from "../assets/repos/crypto-exchange.png"
@@ -29,13 +29,6 @@ export const TimelineData: TimelineDataType[] = [
     },
     {
         id: nanoid(),
-        title:"Freelance Frontend Developer",
-        subtitle:"Remote",
-        date:"07.2021 - 12.2021",
-        note:"I was developing personal websites for my customers."
-    },
-    {
-        id: nanoid(),
         title:"Frontend Development Student",
         subtitle:"Kodluyoruz Frontend Web Development Bootcamp",
         date:"06.2020 - 08.2020",
@@ -50,10 +43,6 @@ export const TimelineData: TimelineDataType[] = [
     },
 
 ]
-
-export const AboutText: AboutType = {
-    about: "Enthusiastic Frontend Developer eager to contribute to team success through hard work, attention to detail, and excellent organizational skills."
-}
 
 export const GithubRepos:GithubReposType[] = [
     {   
@@ -155,3 +144,16 @@ export const TechData:TechDataType[] = [
         image:Express
     }
 ]
+
+export const ProfileInfo:ProfileInfoType = {
+    name:'Mevlüt Can Tuna',
+    titles:['FRONTEND DEVELOPER','WORKS ? FRONTEND DEVELOPER : LEARNER','WEB DEVELOPER'],
+    about:'Enthusiastic Frontend Developer eager to contribute to team success through hard work, attention to detail, and excellent organizational skills.',
+    github:'https://github.com/mevlutcantuna',
+    linkedin:'https://www.linkedin.com/in/mevlutcantuna/',
+    twitter:'https://twitter.com/mevlt_tuna',
+    instagram:'https://www.instagram.com/mevlutcantuna1/',
+    resume:'www.mevlutcantuna.com/mevlutcantuna.pdf',
+    email:'mttuna90@gmail.com',
+    phone_number:'+90 553 044 78 52'
+}

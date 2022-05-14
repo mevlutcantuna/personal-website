@@ -8,10 +8,6 @@ export interface TimelineDataType {
     note:string | null
 }
 
-export interface AboutType {
-    about:string
-}
-
 export interface GithubReposType {
     id:string,
     image:StaticImageData,
@@ -25,4 +21,17 @@ export interface GithubReposType {
 export interface TechDataType {
     id:string,
     image:StaticImageData
+}
+
+export interface ProfileInfoType {
+    name:string,
+    titles:string[],
+    about:string,
+    github:string,
+    linkedin:string,
+    twitter:string,
+    instagram:string,
+    resume:string,
+    email: string,
+    phone_number: string
 }

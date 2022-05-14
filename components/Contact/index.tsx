@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import styles from "./Contact.module.css"
+import { ProfileInfo } from "../../data";
 
 import emailjs from '@emailjs/browser';
 import { message } from 'antd';
@@ -7,7 +8,7 @@ import { message } from 'antd';
 const Contact: React.FC = () => {
     const form = useRef<any>();
     const [formValues, setFormValues] = useState({ full_name: "", email: "", message: "" })
-    const [sending,setSending] = useState<boolean>(false)
+    const [sending, setSending] = useState<boolean>(false)
 
     const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormValues({ ...formValues, [e.target.name]: e.target.value })
@@ -18,12 +19,12 @@ const Contact: React.FC = () => {
 
         if (formValues.full_name.trim() === "" || formValues.email.trim() === "" || formValues.message.trim() === "") {
             return message.error("please provide all inputs..")
-        }   
+        }
 
         setSending(true)
         //@ts-ignore
         emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_PUBLIC_KEY)
-            .then((result) => {
+            .then(() => {
                 setFormValues({ ...formValues, full_name: "", email: "", message: "" })
                 setSending(false)
                 return message.success("your message sended.i'll get back to you as sonn as possible...")
@@ -34,8 +35,8 @@ const Contact: React.FC = () => {
     }
 
     useEffect(() => {
-        if(sending) return message.loading("Message is sending...")
-    },[sending])
+        if (sending) return message.loading("Message is sending...")
+    }, [sending])
 
     return <div id="contact" className={styles.contact}>
         <h1 className={styles.contact__title}>Contact</h1>
@@ -44,11 +45,11 @@ const Contact: React.FC = () => {
                 data-aos-anchor-placement="top-bottom" className={styles.contact__infos}>
                 <div className={styles.contact__infos__item}>
                     <span>Email:</span>
-                    <span>mttuna90@gmail.com</span>
+                    <span>{ProfileInfo.email}</span>
                 </div>
                 <div className={styles.contact__infos__item}>
                     <span>Phone Number:</span>
-                    <span>+90 553 044 78 52</span>
+                    <span>{ProfileInfo.phone_number}</span>
                 </div>
             </div>
             <div data-aos="fade-down"
