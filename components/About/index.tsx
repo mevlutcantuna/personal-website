@@ -13,7 +13,7 @@ const About: React.FC = () => {
                     {AboutText.about}
                 </p>
                 <a
-                    href={"http://localhost:3000/mevlutcantuna.pdf"}
+                    href={"https://mevlutcantuna.com/mevlutcantuna.pdf"}
                     target='_blank'
                     rel='noopener noreferrer'
                     type="pdf"
