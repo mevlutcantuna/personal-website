@@ -13,7 +13,7 @@
 }
 
 .skills .skills__wrapper__item {
-  @apply w-80 duration-100 hover:scale-110
+  @apply w-80 duration-100 hover:scale-110;
 }
 
 @keyframes scroll {
@@ -22,5 +22,11 @@
   }
   100% {
     transform: translateX(calc(-20rem * 5));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills .skills__wrapper {
+    animation: scroll 8s linear infinite;
   }
 }
