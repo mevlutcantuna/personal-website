@@ -1,3 +1,26 @@
 .skills {
-    @apply text-xl
-} 
+  @apply m-auto overflow-hidden relative w-auto;
+}
+
+.skills .skills__wrapper {
+  animation: scroll 17s linear infinite;
+  display: flex;
+  width: calc(20rem * 10);
+}
+
+.skills .skills__wrapper:hover {
+  animation-play-state: paused;
+}
+
+.skills .skills__wrapper__item {
+  @apply w-80 duration-100 hover:scale-110
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-20rem * 5));
+  }
+}

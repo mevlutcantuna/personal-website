@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid'
-import { TimelineDataType,AboutType,GithubReposType } from '../types'
+import { TimelineDataType,AboutType,GithubReposType,TechDataType } from '../types'
+
 import BlogImage from "../assets/repos/blog-project.png"
 import CryptoExchangeImage from "../assets/repos/crypto-exchange.png"
 import SlotMachineImage from "../assets/repos/slot-machine.png"
@@ -7,6 +8,16 @@ import ShoppingImage from "../assets/repos/shopping.png"
 import QuizAppImage from "../assets/repos/quiz-app.png"
 import MovieAppImage from "../assets/repos/movie-app.png"
 
+import CSS3 from "../assets/tech-icons/css3.svg"
+import HTML5 from "../assets/tech-icons/html5.svg"
+import JS from "../assets/tech-icons/javascript.svg"
+import MongoDB from "../assets/tech-icons/mongodb.svg"
+import NextJS from "../assets/tech-icons/nextjs.svg"
+import NodeJS from "../assets/tech-icons/nodejs.svg"
+import ReactIcon from "../assets/tech-icons/react.svg"
+import Redux from "../assets/tech-icons/redux.svg"
+import TypeScript from "../assets/tech-icons/typescript.svg"
+import Express from "../assets/tech-icons/expressjs.svg"
 
 export const TimelineData: TimelineDataType[] = [
     {
@@ -99,5 +110,48 @@ export const GithubRepos:GithubReposType[] = [
         github:"https://github.com/mevlutcantuna/movie-app",
         demo: "",
         tech:["ReactJS","Styled-Components","Redux","React-Router","ReduxThunk","Axios","..."]
+    }
+]
+
+export const TechData:TechDataType[] = [
+    {
+        id:nanoid(),
+        image:HTML5
+    },
+    {
+        id:nanoid(),
+        image:CSS3
+    },
+    {
+        id:nanoid(),
+        image:JS
+    },
+    {
+        id:nanoid(),
+        image:ReactIcon
+    },
+    {
+        id:nanoid(),
+        image:Redux
+    },
+    {
+        id:nanoid(),
+        image:NextJS
+    },
+    {
+        id:nanoid(),
+        image:TypeScript
+    },
+    {
+        id:nanoid(),
+        image:NodeJS
+    },
+    {
+        id:nanoid(),
+        image:MongoDB
+    },
+    {
+        id:nanoid(),
+        image:Express
     }
 ]

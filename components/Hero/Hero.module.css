@@ -1,9 +1,9 @@
 .main {
-  @apply w-full h-screen bg-black text-white flex items-center justify-between pl-[10%] md:px-16 transition-all duration-500;
+  @apply w-full h-screen bg-black text-white flex flex-col justify-center pl-[10%] md:px-16 transition-all duration-500;
 }
 
 .main__texts {
-  @apply pb-32 uppercase;
+  @apply pb-32 uppercase mt-36;
 }
 
 .main__texts__title {
@@ -15,5 +15,5 @@
 }
 
 .main__scroll__down {
-  @apply absolute bottom-12 left-[calc((100vw-88px)/2)] flex flex-col items-center justify-center text-white cursor-pointer;
+  @apply absolute bottom-6 left-[calc((100vw-88px)/2)] flex flex-col items-center justify-center text-white cursor-pointer;
 }

@@ -21,3 +21,8 @@ export interface GithubReposType {
     demo:string,
     tech:string[]
 }
+
+export interface TechDataType {
+    id:string,
+    image:StaticImageData
+}
