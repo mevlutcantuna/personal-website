@@ -1,23 +1,11 @@
 import styles from "./Skills.module.css"
 import Image from "next/image"
 
-import CSS3 from "../../assets/tech-icons/css3.svg"
-import HTML5 from "../../assets/tech-icons/html5.svg"
-import JS from "../../assets/tech-icons/javascript.svg"
-import MongoDB from "../../assets/tech-icons/mongodb.svg"
-import NextJS from "../../assets/tech-icons/nextjs.svg"
-import NodeJS from "../../assets/tech-icons/nodejs.svg"
-import ReactIcon from "../../assets/tech-icons/react.svg"
-import Redux from "../../assets/tech-icons/redux.svg"
-import TypeScript from "../../assets/tech-icons/typescript.svg"
-import Express from "../../assets/tech-icons/expressjs.svg"
-
 import { motion } from "framer-motion"
 import { TechData } from "../../data"
 import { TechDataType } from "../../types"
 
 const Skills = () => {
-
     const variants = {
         hidden: {
             opacity: 0,
