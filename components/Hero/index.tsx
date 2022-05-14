@@ -1,7 +1,6 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
 import ScrollDown from "../../assets/icons/scroll-down.svg"
-import { ProfileInfoType } from "../../types/"
 
 import { useTypewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ import { ProfileInfo } from "../../data";
 
 const Main: React.FC = () => {
     const position = useTypewriter({
-        words: ProfileInfo.titles,
+        words: [...ProfileInfo.titles],
         loop: 0,
         delaySpeed: 1000,
         typeSpeed: 130,

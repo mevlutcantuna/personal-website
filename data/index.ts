@@ -42,7 +42,7 @@ export const TimelineData: TimelineDataType[] = [
         note:"Dropped out in sophomore year. I got english course english preparatory class for a year.",
     },
 
-]
+] 
 
 export const GithubRepos:GithubReposType[] = [
     {   
