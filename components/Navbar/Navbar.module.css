@@ -1,28 +1,27 @@
 .navbar {
-  @apply w-full fixed flex justify-between items-center py-8 px-12 transition-all duration-500 ease-in-out md:px-2 z-50 
+  @apply w-full fixed flex justify-between items-center py-8 px-12 transition-all duration-500 ease-in-out md:px-2 z-20;
 }
 
 .navbar__scrolled {
-  @apply w-full bg-white bg-opacity-20 backdrop-blur-md
+  @apply w-full bg-white bg-opacity-20 backdrop-blur-md;
 }
 
 .navbar__logo {
   @apply text-white text-4xl tracking-widest font-bold;
 }
 
-.navbar__menu__links{
-  @apply flex md:hidden
+.navbar__menu__links {
+  @apply flex md:hidden;
 }
 
-.navbar__drawer__menu{
-  @apply relative max-w-[375px] w-full hidden md:flex md:absolute top-[6.5rem] right-0
+.navbar__drawer__menu {
+  @apply relative max-w-[375px] w-full hidden md:flex md:absolute top-[6.5rem] right-0;
 }
 
-.navbar__drawer__menu__hidden{
-  @apply relative max-w-[375px] hidden md:absolute top-[6.5rem] right-0
+.navbar__drawer__menu__hidden {
+  @apply relative max-w-[375px] hidden md:absolute top-[6.5rem] right-0;
 }
 
-
-.navbar__icons{
-  @apply hidden md:flex
+.navbar__icons {
+  @apply hidden md:flex;
 }
