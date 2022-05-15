@@ -25,7 +25,7 @@ const Cursor: React.FC = () => {
     return (
         <div>
             <div className={styles.cursor} ref={cursorRef}></div>
-            <div className={styles.cursor__followed} ref={cursorFollowedRef}></div>
+            <div className={`${styles.cursor__followed} cursor`} ref={cursorFollowedRef}></div>
         </div>
     )
 }

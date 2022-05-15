@@ -13,3 +13,7 @@
     @apply !cursor-none;
   }
 }
+
+a:hover ~ .cursor {
+  background: red !important;
+}
