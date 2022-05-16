@@ -10,6 +10,6 @@
   *,
   html,
   body {
-    @apply !cursor-none;
+    @apply !cursor-none md:!cursor-default;
   }
 }
