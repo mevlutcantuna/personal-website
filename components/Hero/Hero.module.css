@@ -15,5 +15,6 @@
 }
 
 .main__scroll__down {
-  @apply absolute bottom-6 left-[calc((100vw-88px)/2)] flex flex-col items-center justify-center text-white cursor-pointer;
+  @apply absolute bottom-6 left-[calc((100vw-88px)/2)] flex flex-col items-center justify-center text-white cursor-pointer xsm:hidden
 }
+  
