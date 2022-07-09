@@ -7,8 +7,43 @@ import { motion } from "framer-motion";
 import Skills from "./Skills";
 import { ProfileInfo } from "../../data";
 
+import { useEffect, useRef, useState } from "react";
+// @ts-ignore
+import GLOBE from "vanta/dist/vanta.globe.min";
+// @ts-ignore
+import * as THREE from 'three'
 
 const Main: React.FC = () => {
+
+    const [vantaEffect, setVantaEffect] = useState<any>(0);
+    const vantaRef = useRef(null);
+
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(
+                GLOBE({
+                    el: vantaRef.current,
+                    THREE,
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color: 0x76a0a7,
+                    color2: 0x9b9898,
+                    backgroundColor: 0x0
+                })
+            );
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destory();
+        };
+    }, [vantaEffect]);
+
+
+
     const position = useTypewriter({
         words: [...ProfileInfo.titles],
         loop: 0,
@@ -39,8 +74,9 @@ const Main: React.FC = () => {
         })
     }
 
+
     return (
-        <div id="#" className={styles.main}>
+        <div ref={vantaRef} id="#" className={styles.main}>
             <div className={styles.main__texts}>
                 <motion.h1 variants={variants} transition={{ duration: .5 }} initial='hidden' animate='visible' className={styles.main__texts__title}>{title.text}</motion.h1>
                 <motion.div variants={variants} transition={{ duration: .5 }} initial='hidden' animate='visible' className={styles.main__texts_position}>
