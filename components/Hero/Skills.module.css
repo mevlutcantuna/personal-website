@@ -1,11 +1,14 @@
 .skills {
-  @apply m-auto overflow-hidden relative w-auto;
+  @apply m-auto overflow-hidden relative w-auto h-40;
 }
 
 .skills .skills__wrapper {
   animation: scroll 17s linear infinite;
+  width: calc(30rem * 10);
+  height: 8em;
   display: flex;
-  width: calc(20rem * 10);
+  align-items: center;
+  justify-content: center;
 }
 
 .skills .skills__wrapper:hover {

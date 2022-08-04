@@ -38,10 +38,10 @@ const Navbar: React.FC = () => {
     }, [])
 
 
-    
+
 
     return (
-        <motion.div ref={ref} animate={{ y: "0%", opacity: 1 }} initial={{ y: "-100%" }} transition={{ duration: .2 }} className={`${styles.navbar} ${bgChange && styles.navbar__scrolled}`}>
+        <motion.div ref={ref} animate={{ y: "0%", opacity: 1 }} initial={{ y: "-100%" }} transition={{ duration: .2 }} className={`${styles.navbar} ${bgChange && styles.navbar__scrolled} ${isDrawerOpen ? "!bg-black" : ""}`}>
             <div className={styles.navbar__logo}>MCT</div>
             <div className={styles.navbar__menu__links}>
                 <Menu />
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
                 <DrawerMenu isDrawerOpen={isDrawerOpen} />
             </div>
         </motion.div>
-    ) 
+    )
 }
 
 export default Navbar;
