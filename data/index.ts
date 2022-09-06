@@ -10,7 +10,6 @@ import BlogImage from "../assets/repos/blog-project.png";
 import CryptoExchangeImage from "../assets/repos/crypto-exchange.png";
 import SlotMachineImage from "../assets/repos/slot-machine.png";
 import ShoppingImage from "../assets/repos/shopping.png";
-import QuizAppImage from "../assets/repos/quiz-app.png";
 import MovieAppImage from "../assets/repos/movie-app.png";
 import MessageAppImage from '../assets/repos/message-app.png'
 
