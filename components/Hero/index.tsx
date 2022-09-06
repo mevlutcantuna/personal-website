@@ -38,7 +38,7 @@ const Main: React.FC = () => {
             );
         }
         return () => {
-            if (vantaEffect) vantaEffect.destory();
+            if (vantaEffect) return vantaEffect?.destory();
         };
     }, [vantaEffect]);
 
