@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 import { GithubRepos } from '../data';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Example: React.FC = () => {
