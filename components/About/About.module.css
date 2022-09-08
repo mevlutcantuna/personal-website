@@ -1,13 +1,13 @@
 .about {
-  @apply w-full h-full pt-36 px-32 xl:pl-20 xl:pr-12 lg:!pr-4 sm:!pl-16 min-h-screen bg-black pb-10 grid grid-cols-2 gap-8 lg:grid-cols-1 lg:gap-20
+  @apply w-full h-full pt-36 px-32 xl:pl-20 xl:pr-12 lg:!pr-4 sm:!pl-16 min-h-screen bg-black pb-10 grid grid-cols-2 gap-8 lg:grid-cols-1 lg:gap-20;
 }
 
-.about__main { 
-  @apply text-white flex items-start justify-center flex-col md:mb-10
+.about__main {
+  @apply text-white flex items-start justify-center flex-col md:mb-10;
 }
 
 .about__main h1 {
-  @apply text-4xl mb-4 text-white
+  @apply text-4xl mb-4 text-white;
 }
 
 .about__main p {
@@ -15,17 +15,17 @@
 }
 
 .about__main a {
-  @apply text-sm font-bold px-16 py-4 border-[1px] border-solid border-gray-400 cursor-none relative text-white rounded-sm z-50
+  @apply text-sm font-bold px-16 py-4 border-[1px] border-solid border-gray-400 cursor-none relative text-white rounded-sm z-50;
 }
 
 .about__main a:hover {
-  @apply border-black text-black
+  @apply border-black text-black;
 }
 
 .about__main a::before {
-  @apply content-[''] h-full w-0 bg-gray-400 absolute top-0 left-0 transition-all duration-300 rounded-sm -z-10
-} 
+  @apply content-[''] h-full w-0 bg-gray-400 absolute top-0 left-0 transition-all duration-300 rounded-sm -z-10;
+}
 
 .about__main a:hover::before {
-  @apply bg-gray-500 w-full flex items-center justify-center
+  @apply bg-gray-500 w-full flex items-center justify-center;
 }

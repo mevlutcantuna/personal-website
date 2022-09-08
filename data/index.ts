@@ -11,7 +11,7 @@ import CryptoExchangeImage from "../assets/repos/crypto-exchange.png";
 import SlotMachineImage from "../assets/repos/slot-machine.png";
 import ShoppingImage from "../assets/repos/shopping.png";
 import MovieAppImage from "../assets/repos/movie-app.png";
-import MessageAppImage from '../assets/repos/message-app.png'
+import MessageAppImage from "../assets/repos/message-app.png";
 
 import CSS3 from "../assets/tech-icons/css3.svg";
 import HTML5 from "../assets/tech-icons/html5.svg";
@@ -107,7 +107,15 @@ export const GithubRepos: GithubReposType[] = [
     text: "Authentication with email and password and with google account. Send message and get message in realtime.",
     github: "https://github.com/mevlutcantuna/realtime-message-app",
     demo: "https://message-app-realtime-mct.netlify.app/",
-    tech: ["ReactJS", "Typescript", "PrimeFlex","Redux" ,"ExpressJs", "Socket.io" , "..."],
+    tech: [
+      "ReactJS",
+      "Typescript",
+      "PrimeFlex",
+      "Redux",
+      "ExpressJs",
+      "Socket.io",
+      "...",
+    ],
   },
   {
     id: nanoid(),

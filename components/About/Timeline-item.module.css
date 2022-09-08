@@ -10,16 +10,16 @@
   @apply mb-0;
 }
 
-.timeline__item__box h1{
-  @apply text-base mb-0 text-gray-200 tracking-wide
+.timeline__item__box h1 {
+  @apply text-base mb-0 text-gray-200 tracking-wide;
 }
 
-.timeline__item__box h2{
-  @apply text-gray-400
+.timeline__item__box h2 {
+  @apply text-gray-400;
 }
 
 .timeline__item__box p {
-  @apply text-sm tracking-tight text-gray-400
+  @apply text-sm tracking-tight text-gray-400;
 }
 
 .timeline__item__date {
@@ -55,11 +55,11 @@
     @apply rounded-xl rounded-tl-none;
   }
 
-  .timeline__item:nth-child(1):after{
-      @apply bg-blue-300
+  .timeline__item:nth-child(1):after {
+    @apply bg-blue-300;
   }
 
   .timeline__item:hover::after {
-      @apply bg-blue-500 duration-500
+    @apply bg-blue-500 duration-500;
   }
 }

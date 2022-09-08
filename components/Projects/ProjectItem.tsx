@@ -1,18 +1,22 @@
-import styles from "./project-item.module.css"
-import Image from "next/image"
+import React from 'react';
+import styles from './project-item.module.css';
+import Image from 'next/image';
 
-import DemoIcon from "../../assets/icons/demo.png"
-import GithubIcon from "../../assets/social/github-black.svg"
-import { GithubReposType } from "../../types"
+import DemoIcon from '../../assets/icons/demo.png';
+import GithubIcon from '../../assets/social/github-black.svg';
+import { GithubReposType } from '../../types';
 
 type PropTypes = {
-    item: GithubReposType
-}
+    item: GithubReposType;
+};
 
 const ProjectItem: React.FC<PropTypes> = ({ item }) => {
     return (
-        <div data-aos="fade-right"
-            data-aos-anchor-placement="top" className={styles.project__item}>
+        <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top"
+            className={styles.project__item}
+        >
             <div className={styles.project__item__image}>
                 <Image src={item.image} layout="fill" alt="blog-image" />
             </div>
@@ -20,21 +24,33 @@ const ProjectItem: React.FC<PropTypes> = ({ item }) => {
                 <h1>{item.title}</h1>
                 <p>{item.text}</p>
                 <div>
-                    {item.tech.map((item: string, index: number) => <span key={index}>{item}</span>)}
+                    {item.tech.map((item: string, index: number) => (
+                        <span key={index}>{item}</span>
+                    ))}
                 </div>
                 <div className={styles.project__item__details__bottom}>
-                    {item.demo !== "" && <a href={item.demo} target="_blank" rel="noreferrer">
-                        <Image src={DemoIcon} width={32} height={32} alt="demo" />
-                    </a>
-                    }
+                    {item.demo !== '' && (
+                        <a href={item.demo} target="_blank" rel="noreferrer">
+                            <Image
+                                src={DemoIcon}
+                                width={32}
+                                height={32}
+                                alt="demo"
+                            />
+                        </a>
+                    )}
                     <a href={item.github} target="_blank" rel="noreferrer">
-                        <Image src={GithubIcon} width={32} height={32} alt="github" />
+                        <Image
+                            src={GithubIcon}
+                            width={32}
+                            height={32}
+                            alt="github"
+                        />
                     </a>
-
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProjectItem
+export default ProjectItem;
