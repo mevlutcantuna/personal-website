@@ -42,23 +42,11 @@ const Example: React.FC = () => {
         <button onClick={() => scroll("back")} className="text-red-200 text-lg">
           BACK
         </button>
-        <motion.div
-          variants={variants}
-          transition={{ duration: 0.5 }}
-          initial="hidden"
-          animate="visible"
-          className="w-full max-w-xl flex mx-4"
-        >
-          <motion.div
-            variants={variants}
-            transition={{ duration: 0.5 }}
-            initial="hidden"
-            animate="visible"
-            className="text-white"
-          >
+        <div className="w-full max-w-xl flex mx-4 relative">
+          <div className="text-white animate-rightToLeftSlide absolute top-0 left-0">
             {GithubRepos[count].text}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
         <button onClick={() => scroll("next")} className="text-red-200 text-lg">
           NEXT
         </button>
