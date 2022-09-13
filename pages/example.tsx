@@ -40,7 +40,7 @@ const Example: React.FC = () => {
     <Layout>
       <div className="w-full h-full min-h-screen bg-black flex items-center justify-center">
         <button onClick={() => scroll("back")} className="text-red-200 text-lg">
-          BACK
+          BACK 2
         </button>
         <div className="w-full max-w-xl flex mx-4 relative">
           <div className="text-white animate-rightToLeftSlide absolute top-0 left-0">
