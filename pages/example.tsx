@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const Example: React.FC = () => {
   const [count, setCount] = useState(0);
 
+
   const scroll = (type: string) => {
     if (type === "next") {
       return setCount((prev: number) => {
