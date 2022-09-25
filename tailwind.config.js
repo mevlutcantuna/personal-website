@@ -1,4 +1,3 @@
-const { rotate } = require("next/dist/server/lib/squoosh/impl");
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -26,15 +25,6 @@ module.exports = {
         // => @media (max-width: 639px) { ... }
         xsm: { max: "375px" },
         // => @media (max-width: 375px) { ... }
-      },
-      keyframes: {
-        rightToLeftSlide: {
-          "0%": { transform: "rotate(-3deg)" },
-          "100%": { transform: "rotate(3deg)" },
-        },
-      },
-      animation: {
-        rightToLeftSlide: "rightToLeftSlide 1s ease-in-out",
       },
     },
   },
