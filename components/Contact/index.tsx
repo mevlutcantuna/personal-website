@@ -35,8 +35,8 @@ const Contact: React.FC = () => {
     //@ts-ignore
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         form.current,
         process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
