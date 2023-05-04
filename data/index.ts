@@ -34,7 +34,7 @@ export const TimelineData: TimelineDataType[] = [
   {
     id: nanoid(),
     title: "Frontend Developer",
-    subtitle: "Code2.io",
+    subtitle: "Peaka",
     date: "01.2022 - Current",
     note: "I am developing templates and supporting customers to develop their websites without code. I am working with ReactJS, Redux, Javascript... ",
   },
