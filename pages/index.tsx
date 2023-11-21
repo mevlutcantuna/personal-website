@@ -23,6 +23,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Mevlüt Can Tuna</title>
       </Head>
+      <div>Updating</div>
+      {/*
       <SideBar />
       <Navbar />
       <Hero />
@@ -30,6 +32,7 @@ const Home: NextPage = () => {
       <Projects />
       <Contact />
       <Footer />
+      */}
     </Layout>
   );
 };
