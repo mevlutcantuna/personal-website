@@ -21,7 +21,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Mevlüt Can Tuna</title>
+        <title></title>
       </Head>
       <div>Updating</div>
       {/*
